@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+
+		<script src='../script.js'></script>
+	</head>
+	<body>
+
+		<div id='header'>
+
+		</div>
+
+
+		<div >
+			<form name="appl_weld" >
+					Заявка №: <input type = "text"  id = "docnum" value = "1"><br>
+					Дата заявки: <input type = "date"  id = "appl_date"> <br>
+					Фамилия Имя Отчество: <input type = "text"  size = "40" id = "welder" ><br>
+					Дата рождения: <input type = "date"  id = "birthday"> <br>
+					Место работы (наименование): <input type = "text"  size = "40" id = "workname" value = ""><br>
+					Место работы (адрес, телефон предприятия): <input type = "text"  size="40" id = "work_cont"><br>
+					Стаж работы по сварке: <input type = "text"  size="8" id = "exp"><br>
+					Квалификационный разряд: <input type = "text"  size="8" id = "level" value = "V"><br>
+					Наличие уровня профессиональной подготовки: <input type = "text"  size="40" id = "prof_educ"><br>
+					Специальная подготовка: <input type = "text"  size="40" id = "spec_educ" value = ""><br>
+					Наименования групп технических устройств опасных производственных объектов: <input type = "text" id="group" value = ""><br>
+					Вид аттестации: <input type = "text"  id = "atttype" value = "первичная"><br>
+					Шифр НД по сварке: <input type = "text"  id = "weldcod" value = ""><br>
+					Способ сварки (наплавки): <input type = "text"  size="8" id = "meth" value = "РД"><br>
+					Группа, класс и марка свариваемого материала: <input type = "text"  size="8" id = "material" value = " М01, М03"><br>
+					Вид свариваемых деталей: <input type = "text"  id = "typeunit" value = " Т+Т, Л+Т, Т, Л"><br>
+					Типы сварных швов: <input type = "text"  size="8" id = "seam" value = " СШ, УШ"><br>
+					Вид соединения: <input type = "text"  id = "compaund" value = " ос (бп), ос (сп), дс (бз), дс (зк)"><br>
+					Диапазон толщин деталей: <input type = "text"  size="20" id = "thick" value = " М01 - от 3 до 20; М03 - от 3 до 32"><br>
+					Диапазон диаметров деталей: <input type = "text"  size="20" id = "diametr" value = "М01 - от 25 до 720; М03 - от 265 до 1420"><br>
+					Положение при сварке: <input type = "text"  size="25" id = "position" value = "Н1, Н2, Г, П1, П2, В1, Н45"><br>
+					Сварочные материалы (электроды, проволока и т.д.): <input type = "text"  size="30" id = "weldmat" value = "Э50А- LB-52U"><br>
+					Нормативный документ по контролю: <input type = "text"  size="30" id = "norm" value = "РД 03-606-03, СП 86.13330.2014; СНиП 3.05.05.84"><br>
+					Руководитель предприятия (должность): <input type = "text"  id = "headtitle" value = "Генеральный директор"><br>
+					Руководитель предприятия (Фамилия, Имя, Отчество): <input type = "text"  size="30" id = "headname"><br>
+
+
+					<br> <br>
+
+					<button type = "button" onclick = "askwelder()" >Создать pdf</button>
+
+			</form>
+
+		</div>
+
+
+		<div>
+
+		</div>
+		<hr>
+		<div id = "footer">
+
+		</div>
+
+	</body>
+</html>
